@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rlSend"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/Send"/>
+
+        <EditText
+            android:id="@+id/etSend"
+            android:layout_alignTop="@id/btSend"
+            android:layout_alignBottom="@id/btSend"
+            android:layout_toLeftOf="@+id/btSend"
+            android:layout_toStartOf="@+id/btSend"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@color/colorAccent"
+            android:inputType="none"/>
+    </RelativeLayout>
+
+    <com.devjinjin.stubchatting.view.ChatListView
+        android:id="@+id/csChatList"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#bebebe"
+        android:layout_above="@+id/rlSend">
+
+    </com.devjinjin.stubchatting.view.ChatListView>
+</RelativeLayout>
